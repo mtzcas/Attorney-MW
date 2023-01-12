@@ -30,7 +30,7 @@ footer {
   /*necesario*/
 }
 
-section {
+.sections {
   background-color: #888;
   border: solid 1px #000;
   align-self: stretch;
@@ -40,8 +40,30 @@ section {
 
 .img-hero {
   background-image: url("../assets/images/attorney-group.jpg");
-  background-position:center;
-  background-repeat: round;
-  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
   opacity: 0.5;
+}
+
+.opacity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#efecto {
+  margin:0;
+  background-color: #080a;
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+#primero {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#segundo {
+  grid-area: 3 / 1 / 4 / 4;
+  align-self: top;
+  justify-self: center;
 }
